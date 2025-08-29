@@ -2271,3 +2271,16 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+/* ================================
+   Sidebar Fix - Stick to Left
+   ================================ */
+#sidebar {
+  margin-right: auto;   /* push it to the far left */
+  margin-left: 0;
+}
+
+@media screen and (max-width: 980px) {
+  #sidebar {
+    margin: 0 auto;     /* center it on mobile for readability */
+  }
+}
