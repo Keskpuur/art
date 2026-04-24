@@ -1,5 +1,8 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=UnifrakturMaguntia&display=swap");	
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+/*
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 html, body, div, span, applet, object,
@@ -88,7 +91,7 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #000000;
+  color: #696969;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -128,9 +131,9 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000000;
-  font-family: "Bodoni Moda", serif;
-  font-weight: 400;
+  color: #3d4449;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1em 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -987,12 +990,12 @@ section.special, article.special {
   text-align: center; }
 
 header p {
-  font-family: 'UnifrakturMaguntia', cursive;
-  font-size: 2em;
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
   font-weight: 400;
   letter-spacing: 0.075em;
   margin-top: -0.5em;
-  text-transform: none;
+  text-transform: uppercase; }
 
 header.major > :last-child {
   border-bottom: solid 3px #0b0202;
