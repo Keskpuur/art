@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Keskpuur – artist-run centre at Keskturg, Tallinn</title>
+<title>Keskpuur – artist-run space at Keskturg, Tallinn</title>
 <meta name="description" content="Keskpuur is an artist-run centre focusing on Keskturg (Central Market) and its surroundings. Keldrimäe 9, Tallinn.">
 <meta property="og:title" content="Keskpuur">
 <meta property="og:description" content="Artist-run centre at Keskturg, Tallinn. Now showing: Ellen Vene, Harvest.">
@@ -59,13 +59,14 @@ footer a{margin-right:1.25rem}
 </head>
 <body>
 
-<div class="status" id="status" role="status">Keskpuur · 10:00–15:30 and by appointment</div>
+<div class="status" id="status" role="status">Keskpuur · 11:00–15:00 and by appointment</div>
 
 <header>
   <a class="logo" href="index.html">Keskpuur</a>
   <nav aria-label="Main">
     <a href="current.html">Current</a>
     <a href="past.html">Past</a>
+    <a href="About.html">About</a>
     <a href="#visit">Visit</a>
   </nav>
 </header>
@@ -85,24 +86,20 @@ footer a{margin-right:1.25rem}
 
   <section class="info" id="visit">
     <div>
-      <h2>About</h2>
-      <p>Keskpuur is an artist-run centre focusing on Keskturg (Central Market) and its surroundings.</p>
-    </div>
-    <div>
       <h2>Visit</h2>
       <p>2nd floor of the Meat and Deli Hall<br>Keskturg, Keldrimäe 9<br>10113 Tallinn, Estonia</p>
       <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Keldrim%C3%A4e+9+Tallinn">Open in Google Maps</a></p>
     </div>
     <div>
       <h2>Hours</h2>
-      <p>10:00–15:30<br>and by appointment</p>
+      <p>11:00–15:00<br>and by appointment</p>
       <p><a href="mailto:EMAIL_HERE">EMAIL_HERE</a></p>
     </div>
   </section>
 
   <nav class="more" aria-label="Exhibitions">
     <a href="current.html">Current<small>What is on now</small></a>
-    <a href="past.html">Past exhibitions<small>Archive, 2024 onwards</small></a>
+    <a href="past.html">Past exhibitions<small>Archive, 2023 onwards</small></a>
   </nav>
 </main>
 
@@ -119,7 +116,7 @@ footer a{margin-right:1.25rem}
 // EDIT: days the space is open (0 = Sunday ... 6 = Saturday) and hours.
 (function () {
   var OPEN_DAYS = [0, 1, 2, 3, 4, 5, 6];
-  var OPEN = 10 * 60, CLOSE = 15 * 60 + 30;
+  var OPEN = 11 * 60, CLOSE = 15 * 60 ;
   var el = document.getElementById('status');
   try {
     var p = {};
@@ -130,8 +127,8 @@ footer a{margin-right:1.25rem}
     var open = OPEN_DAYS.indexOf(day) > -1 && mins >= OPEN && mins < CLOSE;
     el.className = 'status' + (open ? ' is-open' : '');
     el.innerHTML = open
-      ? '<b>Open now</b> until 15:30'
-      : '<b>Closed now</b> · open 10:00–15:30 and by appointment';
+      ? '<b>Open now</b> until 15:00'
+      : '<b>Closed now</b> · open 11:00–15:00 and by appointment';
   } catch (e) {}
 })();
 </script>
