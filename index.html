@@ -1,175 +1,139 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Keskpuur</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keskpuur – artist-run centre at Keskturg, Tallinn</title>
+<meta name="description" content="Keskpuur is an artist-run centre focusing on Keskturg (Central Market) and its surroundings. Keldrimäe 9, Tallinn.">
+<meta property="og:title" content="Keskpuur">
+<meta property="og:description" content="Artist-run centre at Keskturg, Tallinn. Now showing: Ellen Vene, Harvest.">
+<meta property="og:image" content="https://keskpuur.com/2026/images/EllenVene.jpg">
+<meta property="og:url" content="https://keskpuur.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff;--ink:#000;--mute:#666;--line:#d9d9d9;--open:#1f7a4d;--closed:#a33;--pad:clamp(1rem,3vw,2.5rem)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.05rem/1.55 Archivo,"Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 
-	</head>
-	<body class="is-preload">
+/* status bar */
+.status{padding:.5rem var(--pad);border-bottom:1px solid var(--line);font-size:.9rem;color:var(--mute)}
+.status b{font-weight:600;color:var(--closed)}
+.status.is-open b{color:var(--open)}
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+/* header */
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.5rem 2rem;padding:var(--pad)}
+.logo{font-weight:800;font-size:1.6rem;letter-spacing:-.02em;text-decoration:none}
+nav{display:flex;gap:1.5rem}
+nav a{text-decoration:none;font-weight:600}
+nav a:hover{text-decoration:underline}
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+/* current exhibition */
+.hero{padding:0 var(--pad)}
+.hero a.img{display:block;background:#eee}
+.hero img{display:block;width:100%;height:auto;max-height:85vh;object-fit:cover}
+.hero h1{margin:1.5rem 0 0;font-weight:800;font-size:clamp(3.2rem,13vw,11rem);line-height:.9;letter-spacing:-.04em}
+.meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 2rem;margin:1rem 0 0;padding:1rem 0;border-top:2px solid var(--ink);font-size:1.25rem;font-weight:600}
+.meta span:last-child{font-weight:400;color:var(--mute)}
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo" style="font-size: 2.5em;"><strong>Keskpuur</strong></a>
-									<ul class="icons">
-										
-										<li><a href="https://www.facebook.com/events/1536996846868541/1536996870201872?active_tab=about" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="https://www.instagram.com/keskpuur/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										
-									</ul>
-								</header>
+/* info */
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2.5rem var(--pad);padding:4rem var(--pad)}
+.info h2{margin:0 0 .75rem;font-size:1rem;font-weight:600}
+.info p{margin:0 0 1rem;max-width:34rem}
 
-							<!-- Banner -->
-							
-								<img src="2026/images/EllenVene.jpg" alt="Ellen Vene Harvest" width="100%" height="100%">
-							  
-								<section id="banner">
-								  <div class="content">
-									<header>
-										<h1 style="font-size:60px;">"Harvest"</h1>
-										<h2 style="font-size:40px;">Ellen Vene</h2>
-										<p style="font-size:25px;">05.09 - 04.10.2026 / Keskturg</p>
-									</header>
-									<ul class="actions">
-									  <li><a href="current.html" class="button big">Learn More</a></li>
-									</ul>
-								  </div>
-								</section>
-							  
+/* archive links */
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));border-top:1px solid var(--line)}
+.more a{display:block;padding:2rem var(--pad);text-decoration:none;font-size:1.6rem;font-weight:800;letter-spacing:-.02em;border-bottom:1px solid var(--line)}
+.more a small{display:block;margin-top:.25rem;font-size:1rem;font-weight:400;letter-spacing:0;color:var(--mute)}
+.more a:hover{background:var(--ink);color:var(--paper)}
+.more a:hover small{color:#ccc}
 
-											<!-- Section -->
-											<section>
-												<header class="major">
-													<h2> Kespuur </h2>
-												</header>
-												<div class="features">
-													<article>
-													
-														<div class="content">
-															<h3>About</h3>
-															<p>an artist run centre focuses on </p>
-															<p>Keskturg (Central Martket) and its surroundings </p>
-															<p></p>
-															<p></p>
-															<p></p>
-															<p></p>
-															<p></p>
-															<p></p>
-															<p></p>
-															<p></p>
-														</div>
-													</article>
-													<article>
-													
-														<div class="content">
-															<h3>Location</h3>
-															<p>2nd floor of meat and deli hall</p>
-															<p>Keskturg</p>
-															<p>Keldrimäe 9, 10113 Tallinn, Estonia</p>
-														</div>
-													</article>
-													<article>
-														
-														<div class="content">
-															<h3>Hours</h3>
-															<p>10:00 - 15:30 and by appointment</p>
-															
-														</div>
-													</article>
-													<article>
-														
-														<div class="content">
-															<h3>Contact</h3>
-															<p>keskpuur@gmail.com</p>
-														</div>
-													</article>
-													
-												</div>
-											</section>
-			
-										
-			
-									</div>
-								</div>
-							
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding:var(--pad);font-size:.9rem;color:var(--mute)}
+footer a{margin-right:1.25rem}
+</style>
+</head>
+<body>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+<div class="status" id="status" role="status">Keskpuur · 10:00–15:30 and by appointment</div>
 
-							
+<header>
+  <a class="logo" href="index.html">Keskpuur</a>
+  <nav aria-label="Main">
+    <a href="current.html">Current</a>
+    <a href="past.html">Past</a>
+    <a href="#visit">Visit</a>
+  </nav>
+</header>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Exhibitions</h2>
-									</header>
-									<ul>
-										
-										<li><a href="current.html">Current </a></li>
-										<li><a href="past.html">Past Exhibitions</a></li>
-								
-										
-									</ul>
-								</nav>
+<main>
+  <section class="hero" aria-labelledby="now">
+    <a class="img" href="current.html">
+      <img src="2026/images/EllenVene.jpg" alt="Work by Ellen Vene from the exhibition Harvest">
+    </a>
+    <h1 id="now">Harvest</h1>
+    <p class="meta">
+      <span>Ellen Vene</span>
+      <span>5 September – 4 October 2026</span>
+    </p>
+    <p><a href="current.html">About the exhibition</a></p>
+  </section>
 
-							
+  <section class="info" id="visit">
+    <div>
+      <h2>About</h2>
+      <p>Keskpuur is an artist-run centre focusing on Keskturg (Central Market) and its surroundings.</p>
+    </div>
+    <div>
+      <h2>Visit</h2>
+      <p>2nd floor of the Meat and Deli Hall<br>Keskturg, Keldrimäe 9<br>10113 Tallinn, Estonia</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Keldrim%C3%A4e+9+Tallinn">Open in Google Maps</a></p>
+    </div>
+    <div>
+      <h2>Hours</h2>
+      <p>10:00–15:30<br>and by appointment</p>
+      <p><a href="mailto:EMAIL_HERE">EMAIL_HERE</a></p>
+    </div>
+  </section>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-									     <h2>About</h2>	
-									     <h2>Contact</h2>	
-									</header>
-									<p>Opening hours: 10:00 - 15:00 or by appointment</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">keskpuur@gmail.com</a></li>
-										
-										<li class="icon solid fa-home">Keldrimäe 9, 10113 Tallinn, Estonia<br />
-										2nd floor of Meat and Deli Hall at Keskturg</li>
-									</ul>
-								</section>
+  <nav class="more" aria-label="Exhibitions">
+    <a href="current.html">Current<small>What is on now</small></a>
+    <a href="past.html">Past exhibitions<small>Archive, 2024 onwards</small></a>
+  </nav>
+</main>
 
+<footer>
+  <span>
+    <a href="https://www.instagram.com/keskpuur/">Instagram</a>
+    <a href="https://www.facebook.com/events/1536996846868541/1536996870201872?active_tab=about">Facebook</a>
+  </span>
+  <span>© Keskpuur</span>
+</footer>
 
-                            <!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-
-						
-
-							<!-- Footer -->
-								<footer id="footer">
-									
-								</footer>
-
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<script>
+// Open/closed banner, computed in Tallinn time whatever the visitor's timezone.
+// EDIT: days the space is open (0 = Sunday ... 6 = Saturday) and hours.
+(function () {
+  var OPEN_DAYS = [0, 1, 2, 3, 4, 5, 6];
+  var OPEN = 10 * 60, CLOSE = 15 * 60 + 30;
+  var el = document.getElementById('status');
+  try {
+    var p = {};
+    new Intl.DateTimeFormat('en-GB', {timeZone: 'Europe/Tallinn', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false})
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+    var day = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday);
+    var mins = (+p.hour % 24) * 60 + +p.minute;
+    var open = OPEN_DAYS.indexOf(day) > -1 && mins >= OPEN && mins < CLOSE;
+    el.className = 'status' + (open ? ' is-open' : '');
+    el.innerHTML = open
+      ? '<b>Open now</b> until 15:30'
+      : '<b>Closed now</b> · open 10:00–15:30 and by appointment';
+  } catch (e) {}
+})();
+</script>
+</body>
 </html>
