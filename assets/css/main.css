@@ -24,7 +24,7 @@ body {
   -webkit-text-size-adjust: none;
   background: #ffffff;
   color: #7f888f;
-font-family: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13pt;
   font-weight: 400;
   line-height: 1.65;
@@ -33,7 +33,7 @@ font-family: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   color: #3d4449;
-  font-family: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1em 0;
@@ -286,7 +286,7 @@ button.disabled, button:disabled,
 #sidebar .toggle:before {
   color: #7f888f;
   content: '\f0c9';
-  font-family: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   font-size: 2em;
   height: 3.75rem;
