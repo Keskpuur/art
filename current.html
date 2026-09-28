@@ -6,6 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
+        :root {
+            --pad: clamp(1rem, 3vw, 2.5rem);
+        }
+        
+        /* Minimal Header from index.html */
+        header.site-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: .5rem 2rem;
+            padding: var(--pad);
+            border-bottom: none;
+        }
+        header.site-header .logo {
+            font-weight: 800;
+            font-size: 1.6rem;
+            letter-spacing: -.02em;
+            text-decoration: none;
+            color: inherit;
+            border: none;
+        }
+        header.site-header nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        header.site-header nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: inherit;
+            border: none;
+        }
+        header.site-header nav a:hover {
+            text-decoration: underline;
+        }
+
         blockquote.epigraph {
             margin: 2em 0;
             padding-left: 1.5em;
@@ -26,12 +62,14 @@
         <div id="main">
             <div class="inner">
 
-                <header id="header">
-                    <a href="index.html" class="logo"><strong>Keskpuur</strong></a>
-                    <ul class="icons">
-                        <li><a href="https://www.facebook.com/events/1536996846868541/1536996870201872?active_tab=about" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                        <li><a href="https://www.instagram.com/keskpuur/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    </ul>
+                <header class="site-header">
+                    <a class="logo" href="index.html">Keskpuur</a>
+                    <nav aria-label="Main">
+                        <a href="current.html">Current</a>
+                        <a href="past.html">Past</a>
+                        <a href="About.html">About</a>
+                        <a href="index.html#visit">Visit</a>
+                    </nav>
                 </header>
 
                 <section>
