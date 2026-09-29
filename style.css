@@ -1,0 +1,43 @@
+/* Keskpuur – shared styles (all pages) */
+:root{--paper:#fff;--ink:#000;--mute:#666;--line:#d9d9d9;--open:#1f7a4d;--closed:#a33;--pad:clamp(1rem,3vw,2.5rem)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.05rem/1.55 Archivo,"Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+/* status bar */
+.status{padding:.5rem var(--pad);border-bottom:1px solid var(--line);font-size:.9rem;color:var(--mute)}
+.status b{font-weight:600;color:var(--closed)}
+.status.is-open b{color:var(--open)}
+
+/* header + nav */
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.5rem 2rem;padding:var(--pad)}
+.logo{font-weight:800;font-size:1.6rem;letter-spacing:-.02em;text-decoration:none}
+nav{display:flex;gap:1.5rem}
+nav a{text-decoration:none;font-weight:600}
+nav a:hover{text-decoration:underline}
+
+/* mobile menu */
+.menu-btn{display:none;background:none;border:0;padding:.5rem;margin:-.5rem;cursor:pointer;color:inherit}
+.menu-btn span{display:block;width:24px;height:2px;background:currentColor;margin:5px 0;transition:transform .2s,opacity .2s}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:640px){
+  header{align-items:center}
+  .menu-btn{display:block}
+  header nav{display:none;flex-basis:100%;flex-direction:column;gap:0;border-top:1px solid var(--line);margin-top:.5rem}
+  header nav.open{display:flex}
+  header nav a{padding:.9rem 0;border-bottom:1px solid var(--line);font-size:1.2rem}
+}
+
+/* visit / hours block */
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2.5rem var(--pad);padding:4rem var(--pad)}
+.info h2{margin:0 0 .75rem;font-size:1rem;font-weight:600}
+.info p{margin:0 0 1rem;max-width:34rem}
+
+/* footer */
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding:var(--pad);font-size:.9rem;color:var(--mute)}
+footer a{margin-right:1.25rem}
