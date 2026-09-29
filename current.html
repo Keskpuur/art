@@ -1,164 +1,142 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Current Exhibition – Keskpuur</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-        :root {
-            --pad: clamp(1rem, 3vw, 2.5rem);
-        }
-        
-        /* Minimal Header from index.html */
-        header.site-header {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: .5rem 2rem;
-            padding: var(--pad);
-            border-bottom: none;
-        }
-        header.site-header .logo {
-            font-weight: 800;
-            font-size: 1.6rem;
-            letter-spacing: -.02em;
-            text-decoration: none;
-            color: inherit;
-            border: none;
-        }
-        header.site-header nav {
-            display: flex;
-            gap: 1.5rem;
-        }
-        header.site-header nav a {
-            text-decoration: none;
-            font-weight: 600;
-            color: inherit;
-            border: none;
-        }
-        header.site-header nav a:hover {
-            text-decoration: underline;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Current Exhibition – Keskpuur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff;--ink:#000;--mute:#666;--line:#d9d9d9;--open:#1f7a4d;--closed:#a33;--pad:clamp(1rem,3vw,2.5rem)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.05rem/1.55 Archivo,"Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 
-        blockquote.epigraph {
-            margin: 2em 0;
-            padding-left: 1.5em;
-            border-left: 2px solid currentColor;
-            font-style: italic;
-        }
-        blockquote.epigraph p.attribution {
-            text-align: right;
-            font-style: normal;
-            margin-top: 0.75em;
-        }
-    </style>
+/* status bar */
+.status{padding:.5rem var(--pad);border-bottom:1px solid var(--line);font-size:.9rem;color:var(--mute)}
+.status b{font-weight:600;color:var(--closed)}
+.status.is-open b{color:var(--open)}
+
+/* header */
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.5rem 2rem;padding:var(--pad)}
+.logo{font-weight:800;font-size:1.6rem;letter-spacing:-.02em;text-decoration:none}
+nav{display:flex;gap:1.5rem}
+nav a{text-decoration:none;font-weight:600}
+nav a:hover{text-decoration:underline}
+
+/* exhibition */
+.hero{padding:0 var(--pad)}
+.hero h1{margin:1.5rem 0 0;font-weight:800;font-size:clamp(3rem,8vw,6rem);line-height:.9;letter-spacing:-.04em}
+.hero .show{margin:.3rem 0 0;font-weight:800;font-size:clamp(2rem,5vw,4rem);line-height:.95;letter-spacing:-.03em}
+.meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 2rem;margin:1rem 0 2rem;padding:1rem 0;border-top:2px solid var(--ink);font-size:1.25rem;font-weight:600}
+.meta span:last-child{font-weight:400;color:var(--mute)}
+.hero img{display:block;width:100%;height:auto;max-height:85vh;object-fit:cover}
+
+.text{max-width:44rem;margin:2.5rem 0 0}
+.text p{margin:0 0 1.25rem}
+blockquote.epigraph{margin:0 0 2em;padding-left:1.5em;border-left:2px solid currentColor;font-style:italic}
+blockquote.epigraph p{margin:0}
+blockquote.epigraph p.attribution{text-align:right;font-style:normal;margin-top:.75em}
+
+/* info */
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2.5rem var(--pad);padding:4rem var(--pad);border-top:1px solid var(--line);margin-top:4rem}
+.info h2{margin:0 0 .75rem;font-size:1rem;font-weight:600}
+.info p{margin:0 0 1rem;max-width:34rem}
+
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding:var(--pad);font-size:.9rem;color:var(--mute)}
+footer a{margin-right:1.25rem}
+</style>
 </head>
-<body class="is-preload">
+<body>
 
-    <div id="wrapper">
+<div class="status" id="status" role="status">Keskpuur · 11:00–15:00 and by appointment</div>
 
-        <div id="main">
-            <div class="inner">
+<header>
+  <a class="logo" href="index.html">Keskpuur</a>
+  <nav aria-label="Main">
+    <a href="current.html">Current</a>
+    <a href="past.html">Past</a>
+    <a href="About.html">About</a>
+    <a href="index.html#visit">Visit</a>
+  </nav>
+</header>
 
-                <header class="site-header">
-                    <a class="logo" href="index.html">Keskpuur</a>
-                    <nav aria-label="Main">
-                        <a href="current.html">Current</a>
-                        <a href="past.html">Past</a>
-                        <a href="About.html">About</a>
-                        <a href="index.html#visit">Visit</a>
-                    </nav>
-                </header>
+<main>
+  <section class="hero">
+    <h1>Harvest</h1>
+    <p class="show" style="margin-top:.3rem">Ellen Vene</p>
 
-                <section>
-                    <header class="main">
-                        <h1>Harvest</h1>
-                        <h2>Ellen Vene</h2>
-                        <h3>05.09 - 04.10.2026</h3>
-                    </header>
+    <p class="meta">
+      <span>05.09 – 04.10.2026</span>
+      <span>Opening: 05.09.2026 13:00</span>
+    </p>
 
-                    <span class="image fit">
-                        <img src="2026/images/EllenVene.jpg" alt="Harvest by Ellen Vene">
-                    </span>
+    <img src="2026/images/EllenVene.jpg" alt="Harvest by Ellen Vene">
 
-                    <div class="English">
-                        <h2>Harvest</h2>
+    <div class="text English">
+      <blockquote class="epigraph">
+        <p>“Love is like a butterfly, as soft and gentle as a sigh<br>
+        The multicolored moods of love are like its satin wings<br>
+        Love makes your heart feel strange inside, it flutters like soft wings in flight<br>
+        Love is like a butterfly, a rare and gentle thing”</p>
+        <p class="attribution">"Love Is Like a Butterfly"<br>
+        by Dolly Parton</p>
+      </blockquote>
 
-                        <p><strong>Opening:</strong> 05.09.2026 13:00</p>
+      <p>Weekend mornings begin with a canvas bag and a quiet insistence on ripeness. It's eight in the morning and the mosquitoes are still asleep, as are most of the humans. But there are people preparing for the busy weekends, the sellers at the local farmer markets, they move through their stalls with a kind of practiced choreography, going through all the produce, checking which are good and which are beginning to rot. The market is a place where goods from many different places are brought together and put on display. Behind each item is a landscape we no longer see. Distance, time, and labour are condensed into a small space and turned into something that can be bought and sold.</p>
 
-                        <blockquote class="epigraph">
-                            <p>“Love is like a butterfly, as soft and gentle as a sigh<br>
-                            The multicolored moods of love are like its satin wings<br>
-                            Love makes your heart feel strange inside, it flutters like soft wings in flight<br>
-                            Love is like a butterfly, a rare and gentle thing”</p>
-                            <p class="attribution">"Love Is Like a Butterfly"<br>
-                            by Dolly Parton</p>
-                        </blockquote>
+      <p>In Harvest, Ellen Vene created a task where she could only work primarily with materials and objects already present in the studio: beeswax and candle wax from used candles given to her by her friends; unfired clay collected during her residency in Mexico; a couple bags of barankas, butterfly decorations and plastic branches. These materials and objects were transformed into an installation that revalues what already exists in her small thoughts and unfinished experiments accumulated over the year. The exhibition allows them to appear in altered forms that resemble a flâneur strolling through the local market, pondering what can be made from what has already been gathered, used, or abandoned. Vene's process focuses on materials and thoughts that are overlooked or left aside, allowing freedom and chances to take over the arrangements as meaning. The studio thus becomes a kind of interior market stall where things are revalued and given a new life. This attention shows how Vene harvests meanings through collections of fragments of thoughts, leftovers and residue. They are strong, fragile and soft as a sigh, each holding its own weight.</p>
 
-                        <p>Weekend mornings begin with a canvas bag and a quiet insistence on ripeness. It's eight in the morning and the mosquitoes are still asleep, as are most of the humans. But there are people preparing for the busy weekends, the sellers at the local farmer markets, they move through their stalls with a kind of practiced choreography, going through all the produce, checking which are good and which are beginning to rot. The market is a place where goods from many different places are brought together and put on display. Behind each item is a landscape we no longer see. Distance, time, and labour are condensed into a small space and turned into something that can be bought and sold.</p>
+      <p>Ellen Vene is a Tallinn-based visual artist whose practice moves across sculpture, installation and new media. Her site-sensitive works are driven by an interest in the ways materials themselves can carry stories. She often works with non-traditional materials and found objects, allowing their inherent logic to shape the work. Her practice engages with cultural histories and environmental processes, examining how inherited narratives and systems of production continue to shape the present.</p>
 
-                        <p>In Harvest, Ellen Vene created a task where she could only work primarily with materials and objects already present in the studio: beeswax and candle wax from used candles given to her by her friends; unfired clay collected during her residency in Mexico; a couple bags of barankas, butterfly decorations and plastic branches. These materials and objects were transformed into an installation that revalues what already exists in her small thoughts and unfinished experiments accumulated over the year. The exhibition allows them to appear in altered forms that resemble a flâneur strolling through the local market, pondering what can be made from what has already been gathered, used, or abandoned. Vene's process focuses on materials and thoughts that are overlooked or left aside, allowing freedom and chances to take over the arrangements as meaning. The studio thus becomes a kind of interior market stall where things are revalued and given a new life. This attention shows how Vene harvests meanings through collections of fragments of thoughts, leftovers and residue. They are strong, fragile and soft as a sigh, each holding its own weight.</p>
-
-                        <p>Ellen Vene is a Tallinn-based visual artist whose practice moves across sculpture, installation and new media. Her site-sensitive works are driven by an interest in the ways materials themselves can carry stories. She often works with non-traditional materials and found objects, allowing their inherent logic to shape the work. Her practice engages with cultural histories and environmental processes, examining how inherited narratives and systems of production continue to shape the present.</p>
-
-                        <p>Vene holds an MA in Contemporary Art from the Estonian Academy of Arts (2021) and a BA in Sculpture and Installation from the Estonian Academy of Arts (2017). She has also studied art history at the University of Applied Arts Vienna Die Angewandte and, during an exchange year at Diego Portales University in Santiago, Chile, studied social sciences and history.</p>
-                    </div>
-                </section>
-
-            </div>
-        </div>
-
-        <div id="sidebar">
-            <div class="inner">
-
-                <section id="search" class="alt">
-                    <form method="post" action="#">
-                        <input type="text" name="query" id="query" placeholder="Search" />
-                    </form>
-                </section>
-
-                <nav id="menu">
-                    <header class="major">
-                        <h2>Menu</h2>
-                    </header>
-                    <ul>
-                        <li><a href="index.html">Homepage</a></li>
-                        <li><a href="current.html">Current Exhibition</a></li>
-                        <li><a href="past.html">Past Exhibitions</a></li>
-                        <li><a href="About.html">About</a></li>
-                    </ul>
-                </nav>
-
-                <section>
-                    <header class="major">
-                        <h2>Contact</h2>
-                    </header>
-                    <p>Opening hours: 11:00 – 15:00 or by appointment</p>
-                    <ul class="contact">
-                        <li class="icon solid fa-envelope"><a href="mailto:keskpuur@gmail.com">keskpuur@gmail.com</a></li>
-                        <li class="icon solid fa-home">
-                            Keldrimäe 9, 10113 Tallinn, Estonia<br />
-                            2nd floor of Meat and Deli Hall at Keskturg
-                        </li>
-                    </ul>
-                </section>
-
-                <footer id="footer">
-                    <p class="copyright">&copy; Keskpuur. All rights reserved.</p>
-                </footer>
-
-            </div>
-        </div>
-
+      <p>Vene holds an MA in Contemporary Art from the Estonian Academy of Arts (2021) and a BA in Sculpture and Installation from the Estonian Academy of Arts (2017). She has also studied art history at the University of Applied Arts Vienna Die Angewandte and, during an exchange year at Diego Portales University in Santiago, Chile, studied social sciences and history.</p>
     </div>
+  </section>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+  <section class="info">
+    <div>
+      <h2>Visit</h2>
+      <p>2nd floor of the Meat and Deli Hall<br>Keskturg, Keldrimäe 9<br>10113 Tallinn, Estonia</p>
+    </div>
+    <div>
+      <h2>Hours</h2>
+      <p>11:00–15:00<br>and by appointment</p>
+      <p><a href="mailto:keskpuur@gmail.com">keskpuur@gmail.com</a></p>
+    </div>
+  </section>
+</main>
 
+<footer>
+  <span>
+    <a href="https://www.instagram.com/keskpuur/">Instagram</a>
+    <a href="https://www.facebook.com/events/1536996846868541/1536996870201872?active_tab=about">Facebook</a>
+  </span>
+  <span>© Keskpuur</span>
+</footer>
+
+<script>
+// Open/closed banner, computed in Tallinn time whatever the visitor's timezone.
+(function () {
+  var OPEN_DAYS = [0, 1, 2, 3, 4, 5, 6];
+  var OPEN = 11 * 60, CLOSE = 15 * 60;
+  var el = document.getElementById('status');
+  try {
+    var p = {};
+    new Intl.DateTimeFormat('en-GB', {timeZone: 'Europe/Tallinn', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false})
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+    var day = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday);
+    var mins = (+p.hour % 24) * 60 + +p.minute;
+    var open = OPEN_DAYS.indexOf(day) > -1 && mins >= OPEN && mins < CLOSE;
+    el.className = 'status' + (open ? ' is-open' : '');
+    el.innerHTML = open
+      ? '<b>Open now</b> until 15:00'
+      : '<b>Closed now</b> · open 11:00–15:00 and by appointment';
+  } catch (e) {}
+})();
+</script>
 </body>
 </html>
